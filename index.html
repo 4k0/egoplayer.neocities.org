@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>egoplayer.neocities.org</title>
+   <meta name="title" content="click!!?">
+   <meta content="https://lastfm.freetls.fastly.net/i/u/770x0/bb80917f32c9857cef94760364a4c211.jpg" property="og:image">
+   <meta name="description" content="egoplayer 2023">
+   <meta property="og:title" content="egoplayer.neocities.org">
+   <meta property="og:description" content="">
+   <meta property="og:image" content="https://lastfm.freetls.fastly.net/i/u/770x0/bb80917f32c9857cef94760364a4c211.jpg">
+   <meta property="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.90">
+    <title>egoplayer.neocities.org</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dots.js"></script>
+    <!-- dots.js by uhh idk but i took it from other web so yea check the code idk lol -->
+
+
+
+</head>
+<body>
+<!-- bg video - wont recomment catbox.moe for doin this, host your own files or find a good file host service -->
+    <video id="background-video" autoplay muted loop>
+        <source src="https://files.catbox.moe/3nbzbi.mp4" type="video/mp4">
+
+    </video>
+
+<!-- bg music / click 2 play-->
+    <audio id="audio">
+        <source src="https://files.catbox.moe/5uf87m.mp3" type="audio/mp3">
+    </audio>
+
+
+
+    <div id="overlay">
+        <!-- overlay is for making the bg not have funny white borders -->
+        <div id="content">
+            <div id="title">
+                <!-- gif for title -->
+                <h1> <img src="egoplayer.gif"> </h1>
+            </div>
+            <div>
+                <!-- fontawesome icons for links -->
+                <pre> <a href="mailto:angel.alexander@tutanota.com"><i class="fas fa-envelope"></i></a> <a href="https://github.com/4k0"><i class="fab fa-github"></i></a> <a href="https://github.com/4k0"><i class="fab fa-discord"></i></a> </pre>
+                <div>
+                    <!-- this for the funny gifs i found on the web -->
+                    <img src="https://blinkie-net.neocities.org/blinkies/3/funny%20face.gif" alt="">
+                    <img src="https://blinkie-net.neocities.org/blinkies/6/dream-w-me.gif" alt="">
+                    <img src="https://blinkie-net.neocities.org/blinkies/Pride/panpride.gif" alt="">
+                </div>
+                <div>
+                  <!-- count views using this funny thing -->
+                    <img src="https://count.getloli.com/get/@wowwy?theme=gelbooru" alt="">
+                </div>
+              
+                <div class="scrolling-text-container">
+                  <div class="scrolling-text">
+                    <!-- so i make buddies try to hear the music -->
+<pre>have you tried clicking for music?</pre>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>//no right click cuz it makes my page funny
+      document.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+      });
+  </script>
+
+    <script>
+      //music function / clic 2 play
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            audio.load();
+            audio.volume = 1;
+            audio.muted = false;
+            audio.play();
+            document.removeEventListener('click', arguments.callee);
+        });
+    </script>
+
+</body>
+</html>
