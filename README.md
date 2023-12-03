@@ -1,2 +1,2 @@
 # egoplayer.neocities.org
-da funny web i made 
+repo here before some nerd makes a repo abt it and starts bullying me
